@@ -65,7 +65,6 @@ function watching() {
     watch(['./docs/js/**/*.js', '!./docs/js/main.min.js'], scripts);
     watch(['./docs/**/*.html']).on('change', browserSync.reload);
 }
-
 function build() {
     return src([
         'docs/**/*.html',
